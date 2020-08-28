@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/newtodo" method="POST">
+    <h2>Enter to do item</h2>
+    <input type="text" name="item" placeholder="Enter Task" width="500px">
+    <input type="submit" value="Submit">
+  </form>
+  <ul>
+      <% for(var i=0; i < todoList.length; i++){ %>
+          <li><%= todoList[i].name %></li>
+          <% } %>
+  </ul>
+</body>
+</html>
